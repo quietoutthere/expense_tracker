@@ -8,7 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <H1>Expense Tracker Report</H1>
+    <h5>Add New Item</h5>
+    <form id="form">
+        <div id="input-field">
+            <label for="file">Type:</label>
+            <select name="type" id="type">
+                <option value="card">Card</option>
+                <option value="cash">Cash</option>
+                <option value="other">Other</option>
+            </select>
+                <label for='name' id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="What did you spend on?">
+                <label for="date" id="date-label">Date:</label>
+                <input type="date" name="date" id="date">
+                <label for="amount" id="amount-label">Amount:</label>
+                <input type="text" placeholder="How much?" id="amount">
+        </div>
+        <div id="button">
+            <button>Run Expenses</button>
+        </div>
+        <div id="expense-table">
+            
+        </div>
+        
+    </form>
+    <script src='main.js'></script>
 </body>
-<script>src='main.js'</script>
+
 </html>
