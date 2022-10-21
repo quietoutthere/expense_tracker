@@ -12,10 +12,6 @@ h5 {
     margin-top: 50px;
 }
 
-#form {
-    border: 1px;
-}
-
 #name-label {
     margin-left: 50px;
 }
@@ -30,4 +26,8 @@ h5 {
 
 #button {
     margin-top: 25px;
+}
+
+#expense-table {
+    margin-top: 50px;
 }
