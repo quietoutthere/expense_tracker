@@ -1,9 +1,7 @@
 const form = document.getElementById('form');
-const inputFields = document.querySelectorAll('input');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    inputFields.value =''
     createNewRow();
 });
 

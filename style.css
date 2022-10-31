@@ -8,30 +8,6 @@ h5 {
     text-decoration: underline;
 }
 
-#input-field {
-    margin-top: 50px;
-}
-
-#name-label {
-    margin-left: 50px;
-}
-
-#date-label {
-    margin-left: 50px;
-}
-
-#amount-label {
-    margin-left: 50px;
-}
-
-#button {
-    margin-top: 25px;
-}
-
-div#table {
-    text-align: center;
-}
-
 #delete-button {
     margin-top: auto;
     margin-bottom: auto;
