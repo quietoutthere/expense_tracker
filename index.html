@@ -18,26 +18,31 @@
                 <option value="cash">Cash</option>
                 <option value="other">Other</option>
             </select>
+
                 <label for='name' id="name-label">Name:</label>
                 <input type="text" id="name" placeholder="What did you spend on?">
-                <label for="date" id="date-label">Date:</label>
+
+                <label for="date">Date:</label>
                 <input type="date" id="date">
-                <label for="amount" id="amount-label">Amount:</label>
-                <input type="text" placeholder="How much?" id="amount-input">
+
+                <label for="amount">Amount:</label>
+                <input type="number" placeholder="How much?" id="amount">
         </div>
         <div id="button">
-            <button>Run Expenses</button>
-        </div>
-        <div id="expense-table">
-            <table>
-                <tr id="type">Type</tr>
-                <tr id="name">Name</tr>
-                <tr id="date">Date</tr>
-                <tr id="amount">Amount</tr>
-                <th id="expense-input"></th>
-            </table>
+            <input type="submit" value="Run Expenses">
         </div>
     </form>
+        <div>
+            <table id="table">
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+                <tr id="new-row"></tr>
+            </table>
+        </div>
     <script src='main.js'></script>
 </body>
 

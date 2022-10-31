@@ -28,6 +28,6 @@ h5 {
     margin-top: 25px;
 }
 
-#expense-table {
-    margin-top: 50px;
+div#table {
+    text-align: center;
 }
