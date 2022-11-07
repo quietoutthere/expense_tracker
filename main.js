@@ -10,8 +10,6 @@ form.addEventListener('submit', function(e) {
     clearInputs();
 });
 
-
-    
 function createNewRow() {
     const inputNode1 = document.createTextNode(typeInput.value);
     const inputNode2 = document.createTextNode(nameInput.value);
