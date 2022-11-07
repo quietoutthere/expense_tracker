@@ -1,29 +1,23 @@
 const form = document.getElementById('form');
+const typeInput = document.getElementById('type');
+const nameInput = document.getElementById('name');
+const dateInput = document.getElementById('date');
+const amountInput = document.getElementById('amount');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     createNewRow();
+    clearInputs();
 });
 
-function grabInputValues() {
-    const type = document.getElementById('type').value;
-    const name = document.getElementById('name').value;
-    const date = document.getElementById('date').value;
-    const amount = document.getElementById('amount').value;
-    const deleteBtn = addDeleteBtn();
-    
-    return [type, name, date, amount, deleteBtn];
-    
-}
 
+    
 function createNewRow() {
-    let inputValues = grabInputValues();
-
-    const inputNode1 = document.createTextNode(inputValues[0]);
-    const inputNode2 = document.createTextNode(inputValues[1]);
-    const inputNode3 = document.createTextNode(inputValues[2]);
-    const inputNode4 = document.createTextNode(inputValues[3]);
-    const inputNode5 = inputValues[4];
+    const inputNode1 = document.createTextNode(typeInput.value);
+    const inputNode2 = document.createTextNode(nameInput.value);
+    const inputNode3 = document.createTextNode(dateInput.value);
+    const inputNode4 = document.createTextNode(amountInput.value);
+    const inputNode5 = addDeleteBtn();
    
     const table = document.getElementById('table');
     const newRow = table.insertRow();
@@ -50,6 +44,11 @@ function addDeleteBtn () {
     });
         
         return deleteBtn
-
 }
 
+function clearInputs() {
+    typeInput.value = '';
+    nameInput.value = '';
+    dateInput.value = '';
+    amountInput.value = '';
+}

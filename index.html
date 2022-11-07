@@ -13,32 +13,33 @@
     <form id="form">
         <div>
             <label for="file">Type:</label>
-            <select name="type" id="type">
+            <select name="type" id="type" required>
+                <option disabled selected value="">Select</option>
                 <option value="card">Card</option>
                 <option value="cash">Cash</option>
                 <option value="other">Other</option>
             </select>
-                <label for='name' id="name-label">Name:</label>
-                <input type="text" id="name" placeholder="What did you spend on?">
-                <label for="date">Date:</label>
-                <input type="date" id="date">
-                <label for="amount">Amount:</label>
-                <input type="number" placeholder="How much?" id="amount">
+            <label for='name' id="name-label" >Name:</label>
+            <input type="text" id="name" placeholder="What did you spend on?" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="amount" >Amount:</label>
+            <input type="number" placeholder="How much?" id="amount" required step=".01"> 
         </div>
         <div id="button">
             <input type="submit" value="Run Expenses">
         </div>
     </form>
-        <div>
-            <table id="table">
-                <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Amount</th>
-                </tr>
-            </table>
-        </div>
+    <div class="table-container">
+        <table id="table" class=" table-body">
+            <tr class="table-row">
+                <th>Type</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+            </tr>
+        </table>
+    </div>
     <script src='main.js'></script>
 </body>
 
