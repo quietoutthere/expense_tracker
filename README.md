@@ -8,5 +8,5 @@ This project felt really good to complete. Functions, arrays, and creating eleme
 Use it [here](https://quietoutthere.github.io/expense_tracker/)!
 
 ## Author
-Evan Oyster - Full Stack Developer
+Evan Oyster - Front End Developer
 [LinkedIn](https://www.linkedin.com/feed/)
