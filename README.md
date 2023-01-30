@@ -8,5 +8,5 @@ This project felt really good to complete. Functions, creating elements really b
 Use it [here](https://quietoutthere.github.io/expense_tracker/)!
 
 ## Author
-Evan Oyster - Front End Developer
+Evan Oyster - Web Developer
 [LinkedIn](https://www.linkedin.com/feed/)
